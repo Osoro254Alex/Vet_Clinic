@@ -34,3 +34,41 @@ ALTER TABLE animals DROP COLUMN species;
 
 ALTER TABLE animals ADD species_id INTEGER REFERENCES species(id);
 ALTER TABLE animals ADD owner_id INTEGER REFERENCES owners(id); 
+
+/*day four*/
+
+-- [x] Create a table for Vets
+CREATE TABLE  vets(
+    id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(150),
+    age INT,
+    date_of_graduation DATE
+);
+
+-- [x] Create a many to many relationship between vets and species
+
+CREATE TABLE specializations (
+    vet_id INT,
+    species_id INT,
+    PRIMARY KEY (vet_id, species_id),
+    CONSTRAINT fk_vets
+        FOREIGN KEY (vet_id)
+            REFERENCES vets(id),
+    CONSTRAINT fk_species
+        FOREIGN KEY (species_id)
+            REFERENCES species(id)
+);
+
+
+CREATE TABLE visits(
+    vet_id INT,
+    animal_id INT,
+    date_of_visit DATE,
+    PRIMARY KEY (vet_id, animal_id, date_of_visit),
+    CONSTRAINT fk_vets
+        FOREIGN KEY (vet_id)
+            REFERENCES vets(id),
+    CONSTRAINT fk_animals
+        FOREIGN KEY (animal_id)
+            REFERENCES animals(id)
+);
