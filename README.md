@@ -66,7 +66,7 @@ After you're finished please remove all the comments and instructions!
 > See screenshots in images folder
 
 - [Screenshots](./images)
-- <img src="./images/DB-Diagram" width="400" height="200" alt="clinic_diagram.png">
+- <img src="./images/DB-Diagram.png" width="400" height="200" alt="clinic_diagram.png">
 
 <details>
   <summary>Client</summary>
