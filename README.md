@@ -115,6 +115,13 @@ Clone this repository to your desired folder:
 - Twitter: [@twitterhandle](https://twitter.com/ALEX14809153)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alexogeto/)
 
+👤 **Michael Amponsah**
+
+- GitHub: [@michaelamponsah](https://github.com/michaelamponsah)
+- Twitter: [@_mikeamponsah](https://twitter.com/_mikeamponsah)
+- LinkedIn: [michaelamponsah](https://linkedin.com/in/mikeamponsah)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->

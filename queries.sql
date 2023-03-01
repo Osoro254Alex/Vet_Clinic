@@ -177,3 +177,41 @@ SELECT species.name AS "species", COUNT(animals.species_id)
   WHERE vets.name = 'Maisy Smith'
   GROUP BY species.name
 ORDER BY count DESC LIMIT 1;
+
+--[x] database perfomance audit
+-- first query 
+SELECT COUNT(*) FROM visits where animal_id = 20;
+
+-- Check the execution time 
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 20;
+
+-- Create an index
+CREATE INDEX animal_id_idx ON visits(animal_id ASC);
+
+-- Check execution time again
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 20;
+
+-- second query 
+SELECT * FROM visits where vet_id = 2;
+
+
+-- Check the execution time 
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+-- Create an index
+CREATE INDEX vet_id_idx ON visits(vet_id);
+
+-- Check execution time again
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+-- Third query 
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+-- Check the execution time 
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+-- Create an index
+CREATE INDEX email_idx ON owners(email ASC);
+
+-- Check execution time again
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com'; 
