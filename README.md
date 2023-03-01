@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+
 
 <!--
 HOW TO USE:
@@ -24,8 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
   <h3><b>README File</b></h3>
 
@@ -66,6 +65,9 @@ After you're finished please remove all the comments and instructions!
 > See screenshots in images folder
 
 - [Screenshots](./images)
+
+- <img src="./images/DB-Diagram.jpeg" width="600" height="400" alt="clinic_diagram.">
+
 
 <details>
   <summary>Client</summary>
