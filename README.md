@@ -67,7 +67,8 @@ After you're finished please remove all the comments and instructions!
 
 - [Screenshots](./images)
 
-- <img src="./images/DB-Diagram.jpeg" width="400" height="200" alt="clinic_diagram.">
+<!-- - <img src="./images/DB-Diagram.jpeg" width="600" height="400" alt="clinic_diagram."> -->
+- ![Vet_clinic Database diagram](./images/DB-Diagram.jpeg){:width="600px" height="400px"}
 
 <details>
   <summary>Client</summary>
