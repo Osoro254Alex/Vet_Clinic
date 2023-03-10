@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![]()
 
   <h3><b>README File</b></h3>
 
